@@ -1,0 +1,26 @@
+GET http://localhost:3333/uploads/oleo.svg HTTP/1.1
+
+###
+
+GET http://localhost:3333/items HTTP/1.1
+
+###
+
+POST http://localhost:3333/points HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Brasileirão",
+    "email": "brasileira@brasil.com",
+    "whatsapp": "21154564678",
+    "latitude": -46,
+    "longitude": -15,
+    "city": "Contagem",
+    "uf": "MG",
+    "items": [
+        1,
+        2, 
+        5
+    ]
+}
+
