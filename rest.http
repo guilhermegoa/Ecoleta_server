@@ -1,17 +1,30 @@
 GET http://localhost:3333/uploads/oleo.svg HTTP/1.1
-
 ###
 
 GET http://localhost:3333/items HTTP/1.1
+###
 
+GET  http://localhost:3333/points?city=Contagem&uf=MG&items=6 HTTP/1.1
+###
+
+GET  http://localhost:3333/points?city=Contagem HTTP/1.1
+###
+
+GET  http://localhost:3333/points?uf=MG HTTP/1.1
+###
+
+GET  http://localhost:3333/points?items=2 HTTP/1.1
+###
+
+GET  http://localhost:3333/points/2 HTTP/1.1
 ###
 
 POST http://localhost:3333/points HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Brasileirão",
-    "email": "brasileira@brasil.com",
+    "name": "Brasileirão2",
+    "email": "brasileirao2@brasil.com",
     "whatsapp": "21154564678",
     "latitude": -46,
     "longitude": -15,
@@ -19,8 +32,7 @@ content-type: application/json
     "uf": "MG",
     "items": [
         1,
-        2, 
-        5
+        2,
+        6
     ]
 }
-
