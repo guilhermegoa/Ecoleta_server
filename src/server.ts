@@ -22,7 +22,7 @@ app.listen(3333);
 //DELETE: Remover uma informação do back-end
 
 //Request Param: Parâmetros que vem na própria rota que identificam um recurso
-//Query Param: Parâmetros que vem na príoria roda, geralamente opcionais para filtro
-//Rquest Body: Parâmetros para criação/atualização de informação
+//Query Param: Parâmetros que vem na própria rota, geralamente opcionais para filtro
+//Route Param: Parâmetros para criação/atualização de informação
 
-//Knex: Linguagem SQL  para js
+//Knex: Linguagem SQL para js
